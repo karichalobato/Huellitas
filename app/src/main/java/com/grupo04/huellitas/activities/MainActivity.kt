@@ -1,7 +1,8 @@
-package com.grupo04.huellitas
+package com.grupo04.huellitas.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.grupo04.huellitas.R
 
 class MainActivity : AppCompatActivity() {
 
