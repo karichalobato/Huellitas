@@ -9,8 +9,8 @@ data class User (
 
     @ColumnInfo(name = "Profile_Picture")
     val profile_picture: String,
-    @ColumnInfo(name = "Full_Name")
-    val full_name: String,
+    @ColumnInfo(name = "Name")
+    val name: String,
     @ColumnInfo(name = "Username")
     val username: String,
     @ColumnInfo(name = "Password")
