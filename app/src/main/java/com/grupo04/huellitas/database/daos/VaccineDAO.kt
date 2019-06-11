@@ -16,6 +16,9 @@ interface VaccineDAO {
     @Query("SELECT * FROM Vaccine WHERE name==:name")
     fun getVaccineByName(name: String): LiveData<List<Vaccine>>
 
+    @Query("SELECT * FROM Vaccine")
+    fun getAllVaccines():LiveData<List<Vaccine>>
+
     @Query("DELETE FROM Vaccine WHERE idVaccine==:idVaccine")
     fun deleteVaccineByID(idVaccine: Int):LiveData<List<Vaccine>>
 

@@ -19,4 +19,10 @@ interface UserDAO {
     @Query("SELECT * FROM User")
     fun getAllUsers():LiveData<List<User>>
 
+    @Query("DELETE FROM User")
+    fun deleteUsers()
+
+    @Query("DELETE FROM User WHERE idUser==:idUser")
+    fun deleteUserByID(idUser: Int):LiveData<List<User>>
+
 }

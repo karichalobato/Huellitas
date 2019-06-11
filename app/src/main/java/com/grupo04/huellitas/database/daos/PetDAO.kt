@@ -17,6 +17,9 @@ interface PetDAO {
     @Query("SELECT * FROM Pet WHERE name==:name")
     fun geyPetByName(name:String):LiveData<List<Pet>>
 
+    @Query("SELECT * FROM Pet")
+    fun getAllPets():LiveData<List<Pet>>
+
     //TODO BORRA SEGUN EL ID DE LA MASCOTA
     @Query("DELETE FROM Pet WHERE idPet==:idPet")
     fun deletePetByID(idPet: Int):LiveData<List<Pet>>
