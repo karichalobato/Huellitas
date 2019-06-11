@@ -9,4 +9,4 @@ import androidx.room.ForeignKey
         parentColumns = ["idVaccine"], childColumns = ["id_vaccine"]),
     ForeignKey(entity = Pet::class, parentColumns = ["idPet"],
         childColumns = ["id_pet"])])
-data class VaccinePetJoin( var vacunaID:Int, var mascotaID:Int)
+data class VaccineXPetJOIN(var vacunaID:Int, var mascotaID:Int)
