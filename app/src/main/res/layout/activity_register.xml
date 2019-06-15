@@ -8,6 +8,14 @@
         android:orientation="vertical"
         tools:context=".activities.RegisterActivity">
 
+    <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
     <EditText
             android:id="@+id/txtName"
             android:layout_width="match_parent"
