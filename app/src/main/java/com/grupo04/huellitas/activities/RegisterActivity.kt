@@ -66,7 +66,7 @@ class RegisterActivity : AppCompatActivity() {
                         val user: FirebaseUser? = auth.currentUser
                         verifyEmail(user)
 
-                        val userBD=dbReference.child(user?.uid.toString())
+                        val userBD=dbReference.child(user!!.uid)
 
                         userBD.child("Name").setValue(name)
                         userBD.child("lastName").setValue(lastName)
