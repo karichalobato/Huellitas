@@ -26,7 +26,7 @@
             android:inputType="textPersonName"/>
 
     <EditText
-            android:id="@+id/textLastName"
+            android:id="@+id/txtLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -53,6 +53,7 @@
             android:inputType="textPassword"/>
 
     <Button
+            android:id="@+id/button_register"
             android:onClick="register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -13,13 +13,11 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.grupo04.huellitas.R
+import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
 
-    private lateinit var txtName:EditText
-    private lateinit var txtLastName:EditText
-    private lateinit var txtEmail:EditText
-    private lateinit var txtPassword:EditText
+
     private lateinit var progressBar: ProgressBar
     private lateinit var dbReference:DatabaseReference
     private lateinit var database:FirebaseDatabase
@@ -29,10 +27,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        txtName=findViewById(R.id.txtName)
-        txtLastName=findViewById(R.id.textLastName)
-        txtEmail=findViewById(R.id.txtEmail)
-        txtPassword=findViewById(R.id.txtPassword)
+
 
         progressBar=findViewById(R.id.progressBar)
         database= FirebaseDatabase.getInstance()
