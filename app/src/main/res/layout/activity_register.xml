@@ -8,4 +8,49 @@
         android:orientation="vertical"
         tools:context=".activities.RegisterActivity">
 
+    <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:hint="Nombre"
+            android:inputType="textPersonName"/>
+
+    <EditText
+            android:id="@+id/textLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:hint="Apellido"
+            android:inputType="textPersonName"/>
+
+    <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"/>
+
+    <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"/>
+
+    <Button
+            android:onClick="register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorText"/>
+
 </LinearLayout>
