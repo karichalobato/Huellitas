@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.grupo04.huellitas.R
 import kotlinx.android.synthetic.main.activity_log_in.*
@@ -20,6 +21,7 @@ class LogInActivity : AppCompatActivity() {
     private lateinit var txtPassword:EditText
     private lateinit var progressBarLogIn: ProgressBar
     private lateinit var auth:FirebaseAuth
+    private lateinit var mFirebaseAnalytics: FirebaseAnalytics
 
 
 
@@ -32,6 +34,8 @@ class LogInActivity : AppCompatActivity() {
 
         progressBarLogIn=findViewById(R.id.progressBar)
         auth= FirebaseAuth.getInstance()
+
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this)
     }
     fun forgotPassword(view: View){
         startActivity(Intent(this,ForgotPassActivity::class.java))
